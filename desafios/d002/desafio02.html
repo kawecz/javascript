@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de boas-vindas</title>
+    <style>
+        button {
+            padding: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Boas-Vindas</h1>
+        <button onclick="perguntas()">Inicie o Desafio</button>
+    </section>
+
+    <script>
+        function perguntas(){
+            let name =  prompt("Qual é o seu nome?")
+            let idade =  prompt(`Olá ${name}, Quantos anos você tem?`)
+            alert(`Acabei de conhecer ${name}, que tem ${idade}`)
+        }
+    </script>
+</body>
+</html>
