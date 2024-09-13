@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio antes e depois</title>
+    <style>
+        button {
+            padding: 2em;
+            cursor: pointer;   
+            transition: all 0.8s;
+        }
+
+        button:hover {
+            border: none;
+            background: black;
+            color: white;
+            transition: all 1s;
+            transform: translateX(1em);
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <button onclick="calc()">Antecessor e Sucessor</button>
+
+    <script>
+        function calc(){
+        var n1 = prompt('Digite um número inteiro qualquer:')
+        var sucessor = Number(n1) + 1
+        var ante = n1 - 1
+        alert(`Antes de ${n1}, temos o número ${ante}
+        Depois de ${n1}, temos o número ${sucessor}`)
+        }
+    </script>
+</body>
+</html>
